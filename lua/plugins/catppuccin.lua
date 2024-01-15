@@ -4,6 +4,12 @@ return {
 	name = "catppuccin",
 	priority = 1000,
 	config = function()
+    require("catppuccin").setup({
+      transparent_background = false,
+      integrations = {
+        notify = true
+      }
+    })
 		vim.cmd.colorscheme("catppuccin")
 	end,
 }
