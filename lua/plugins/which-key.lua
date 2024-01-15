@@ -10,7 +10,8 @@ return {
     local mappings = {
       q = {":q<CR>", "Quit"},
       f = "Find",
-      c = "Code"
+      c = "Code",
+      g = "Go to"
     }
     local opts = {
       prefix = '<leader>'
