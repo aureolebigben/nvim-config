@@ -20,5 +20,9 @@ return {
     vim.keymap.set("n", "<leader>n", "<CMD>Neotree filesystem reveal left<CR>", {
       desc = "Open Neotree",
     })
+
+    vim.keymap.set("n", "<leader>b", "<CMD>Neotree buffers reveal left<CR>", {
+      desc = "Open buffers tree"
+    })
   end,
 }
