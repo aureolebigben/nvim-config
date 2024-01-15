@@ -8,7 +8,9 @@ return {
   config = function ()
     local wk = require('which-key')
     local mappings = {
-      q = {":q<CR>", "Quit"}
+      q = {":q<CR>", "Quit"},
+      f = "Find",
+      c = "Code"
     }
     local opts = {
       prefix = '<leader>'

@@ -5,6 +5,7 @@ return {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
+    "3rd/image.nvim",
   },
   config = function()
     local neotree = require("neo-tree")
@@ -17,7 +18,7 @@ return {
       desc = "Open Neotree",
     })
     vim.keymap.set("n", "<leader>n", "<CMD>Neotree filesystem reveal left<CR>", {
-      desc = "Open Neotree"
+      desc = "Open Neotree",
     })
   end,
 }
