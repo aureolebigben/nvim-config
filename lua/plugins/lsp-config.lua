@@ -18,6 +18,7 @@ return {
           "jsonls",
           "puppet",
           "sqlls",
+          "intelephense",
         },
       })
     end,
@@ -52,14 +53,17 @@ return {
       lspconfig.sqlls.setup({
         capabilities = capabilities,
       })
+      lspconfig.intelephense.setup({
+        capabilities = capabilities
+      })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {
         desc = "Show doc",
       })
-      vim.keymap.set("n", "gd", vim.lsp.buf.definition, {
+      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {
         desc = "Go to definition",
       })
-      vim.keymap.set("n", "gr", vim.lsp.buf.references, {
+      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {
         desc = "Go to references",
       })
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {
