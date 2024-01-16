@@ -5,18 +5,19 @@ return {
 		vim.o.timeout = true
 		vim.o.timeoutlen = 300
 	end,
-  config = function ()
-    local wk = require('which-key')
-    local mappings = {
-      q = {":q<CR>", "Quit"},
-      f = "Find",
-      c = "Code",
-      g = "Go to"
-    }
-    local opts = {
-      prefix = '<leader>'
-    }
+	config = function()
+		local wk = require("which-key")
+		local mappings = {
+			q = { ":q<CR>", "Quit" },
+			f = "Find",
+			c = "Code",
+			g = "Go to",
+			t = "Terminal",
+		}
+		local opts = {
+			prefix = "<leader>",
+		}
 
-    wk.register(mappings, opts)
-  end
+		wk.register(mappings, opts)
+	end,
 }
