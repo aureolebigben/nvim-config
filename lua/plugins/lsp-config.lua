@@ -25,6 +25,9 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      "folke/neodev.nvim", -- neodev can't work if lsp is configured beofre neodev
+    },
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
@@ -54,7 +57,7 @@ return {
         capabilities = capabilities,
       })
       lspconfig.intelephense.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {
