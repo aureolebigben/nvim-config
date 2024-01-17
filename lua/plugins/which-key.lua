@@ -13,6 +13,7 @@ return {
 			c = "Code",
 			g = "Go to",
 			t = "Terminal",
+      d = "Debug"
 		}
 		local opts = {
 			prefix = "<leader>",
