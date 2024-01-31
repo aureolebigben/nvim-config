@@ -11,7 +11,7 @@ return {
 			q = { ":q<CR>", "Quit" },
 			f = "Find",
 			c = "Code",
-			g = "Go to",
+			g = "Git/Go to",
 			t = "Terminal",
 			T = "Test",
 			d = "Debug",
